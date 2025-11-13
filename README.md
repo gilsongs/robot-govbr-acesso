@@ -45,7 +45,7 @@ robot-govbr-acesso/
 	  tests/conta_test.robot
 	```
 
-### 🧍‍♂️ Exemplo — Teste de Recuperação de Conta
+### 🔄 Exemplo — Teste de Recuperação de Conta
 
 	```bash
 	robot -d results \
