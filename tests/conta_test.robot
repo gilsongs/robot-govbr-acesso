@@ -12,7 +12,7 @@ Suite Teardown    Capturar e fechar navegador
 Login com credenciais válidas
     Fazer login com as credenciais    ${CPF}
     Wait Until Page Contains    gov.br
-    Log To Console    \nLogin realizado com sucesso!
+    Log To Console    Botão "Continuar" clicado com sucesso
 
 *** Keywords ***
 Capturar e fechar navegador
