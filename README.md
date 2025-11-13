@@ -36,22 +36,18 @@ robot-govbr-acesso/
 
 ### 🔐 Exemplo — Teste de Login da Conta
 
-	```bash
 	robot -d results \
 	  --variable URL_SSO:https://sso.validacao.acesso.gov.br/login \
 	  --variable BROWSER:chrome \
 	  --variable CPF:26866878861 \
 	  --variable SENHA:Mgisdg@1507 \
 	  tests/conta_test.robot
-	```
 
 ### 🔄 Exemplo — Teste de Recuperação de Conta
 
-	```bash
 	robot -d results \
 	  --variable URL_SSO:https://sso.validacao.acesso.gov.br/login \
 	  --variable BROWSER:chrome \
 	  --variable CPF:26866878861 \
 	  --variable SENHA:Mgisdg@1507 \
 	  tests/recupera_conta_test.robot
-	```
