@@ -14,6 +14,7 @@ robot-govbr-acesso/
 ├── variables/    # Variáveis e credenciais externas
 ├── results/      # Logs e relatórios gerados
 └── README.md     # Documentação do projeto
+```
 
 ---
 
