@@ -1,0 +1,5 @@
+# Ignorar relatórios e logs gerados automaticamente
+results/
+
+# Ignorar saída interativa gerada pelo Robot Framework
+interactive_console_output.xml
