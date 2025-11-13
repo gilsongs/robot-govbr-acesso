@@ -7,12 +7,13 @@ O projeto segue boas práticas de organização, separando recursos, variáveis 
 
 ## 📂 Estrutura do Projeto
 
+```bash
 robot-govbr-acesso/
-├── tests/ # Casos de teste (.robot)
-├── resources/ # Keywords e localizadores de página
-├── variables/ # Variáveis e credenciais externas
-├── results/ # Logs e relatórios gerados
-└── README.md # Documentação do projeto
+├── tests/        # Casos de teste (.robot)
+├── resources/    # Keywords e localizadores de página
+├── variables/    # Variáveis e credenciais externas
+├── results/      # Logs e relatórios gerados
+└── README.md     # Documentação do projeto
 
 ---
 
