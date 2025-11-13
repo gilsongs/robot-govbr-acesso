@@ -14,3 +14,15 @@ robot-govbr-acesso/
 ├── results/ # Logs e relatórios gerados
 └── README.md # Documentação do projeto
 
+---
+
+## ⚙️ Pré-requisitos
+
+- Python 3.9+  
+- Google Chrome  
+- ChromeDriver compatível  
+- Pacotes:
+  ```bash
+  pip install robotframework
+  pip install robotframework-seleniumlibrary
+  pip install webdriver-manager
