@@ -8,7 +8,7 @@ ${CPF_LBL}               xpath=//*[@id="login-cpf"]/h3
 ${SENHA_LBL}             xpath=//*[@id="login-password"]/h3
 
 *** Keywords ***
-Abrir página de login
+Abrir a pagina de login
     [Arguments]    ${url}    ${browser}
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
@@ -24,7 +24,7 @@ Obter a page da Conta
     Wait Until Page Contains Element    ${SENHA_LBL}    timeout=10s
 
 Capturar a imagem da tela
-    Capture Page Screenshot
+    Capture Page Screenshot    screenshot-${SUITE_NAME}.png
     #Capture Page Screenshot    ${OUTPUT DIR}/screenshot-final.png
     
 Fechar navegador 
