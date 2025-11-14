@@ -13,7 +13,7 @@ Suite Teardown    Capturar e fechar navegador
 *** Test Cases ***
 Recuperar senha de conta GovBR
     [Documentation]    Acessa a tela de login e clica em "Esqueci minha senha"
-    Fazer login com as credenciais    ${CPF}
+    Identificar com o CPF    ${CPF}
     Clicar em esqueci minha senha     ${SENHA}
 
 *** Keywords ***

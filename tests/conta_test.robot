@@ -10,7 +10,7 @@ Suite Teardown    Capturar e fechar navegador
 
 *** Test Cases ***
 Login com credenciais válidas
-    Fazer login com as credenciais    ${CPF}
+    Identificar com o CPF    ${CPF}
     Wait Until Page Contains    gov.br
     Log To Console    Botão "Continuar" clicado com sucesso
 

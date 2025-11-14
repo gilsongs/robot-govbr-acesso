@@ -12,7 +12,7 @@ Abrir página de login
     Maximize Browser Window
     Wait Until Element Is Visible    xpath=//*[@id="login-cpf"]/h3
 
-Fazer login com as credenciais
+Identificar com o CPF
     [Arguments]    ${cpf}
     Input Text    ${CPF_FIELD}    ${cpf}
     Click Button  ${CONTINUAR_BTN}
