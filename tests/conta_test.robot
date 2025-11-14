@@ -4,19 +4,19 @@ Resource          ../resources/conta_page.resource
 Variables         ../variables/credentials.py
 Library           SeleniumLibrary
 
-Suite Setup       Abrir página de login    ${URL_SSO}    ${BROWSER}
+Suite Setup       Abrir a pagina de login    ${URL_SSO}    ${BROWSER}
 Test Setup        Log To Console    URL=${URL_SSO} BROWSER=${BROWSER} CPF=${CPF} SENHA=${SENHA}
 #Test Teardown     Capture Page Screenshot
-Suite Teardown    Deve capturar e fechar navegador
+Suite Teardown    Capturar Screenshot Final
 
 *** Test Cases ***
-Deve acessar com CPF válido
+Deve acessar com CPF valido
     Identificar com o CPF    ${CPF}
     Wait Until Page Contains    gov.br
     Log To Console    Botão "Continuar" clicado com sucesso
 
 *** Keywords ***
-Deve capturar e fechar navegador
+Capturar Screenshot Final
     Obter a page da Conta
     Capturar a imagem da tela
     Fechar navegador
