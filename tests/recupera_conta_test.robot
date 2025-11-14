@@ -7,17 +7,17 @@ Library           SeleniumLibrary
 
 Suite Setup       Abrir página de login    ${URL_SSO}    ${BROWSER}
 Test Setup        Log To Console    URL=${URL_SSO} BROWSER=${BROWSER} CPF=${CPF} SENHA=${SENHA}
-Test Teardown     Capture Page Screenshot
-Suite Teardown    Capturar e fechar navegador
+#Test Teardown     Capture Page Screenshot
+Suite Teardown    Deve capturar e fechar navegador
 
 *** Test Cases ***
-Login na conta GovBR
-    [Documentation]    Acessa a tela de login e clica em "Entrar"
+Deve tentar recuperar a senha da conta GovBR com o serviço indisponível
+    [Documentation]    Acessa a tela de login e clica em "Esqueci minha senha"
     Identificar com o CPF    ${CPF}
-    Clicar em esqueci minha senha
+    Clicar em esqueci minha senha e exibe serviço indisponivel
 
 *** Keywords ***
-Capturar e fechar navegador
-    Capture Page Screenshot
-    #Capture Page Screenshot    ${OUTPUT DIR}/screenshot-final.png
+Deve capturar e fechar navegador
+    Obter a page da recuperação de conta
+    Capturar a imagem da tela
     Fechar navegador
