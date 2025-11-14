@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Teste de recuperação de senha no portal SSO do gov.br
 Resource          ../resources/conta_page.resource
-Resource          ../resources/recupera_conta_page.resource
+Resource          ../resources/login_conta_page.resource
 Variables         ../variables/credentials.py
 Library           SeleniumLibrary
 
@@ -11,10 +11,10 @@ Test Teardown     Capture Page Screenshot
 Suite Teardown    Capturar e fechar navegador
 
 *** Test Cases ***
-Login na conta GovBR
-    [Documentation]    Acessa a tela de login e clica em "Entrar"
+Recuperar senha de conta GovBR
+    [Documentation]    Acessa a tela de login e clica em "Esqueci minha senha"
     Identificar com o CPF    ${CPF}
-    Clicar em esqueci minha senha
+    Clicar em entrar para o login    ${SENHA}
 
 *** Keywords ***
 Capturar e fechar navegador

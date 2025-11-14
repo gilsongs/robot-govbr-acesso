@@ -8,7 +8,6 @@ ${ESQUECI_SENHA_BTN}    id=password-recovery
 
 *** Keywords ***
 Clicar em esqueci minha senha
-    [Arguments]    ${senha}
     Wait Until Element Is Visible    ${ESQUECI_SENHA_BTN}
     Click Button    ${ESQUECI_SENHA_BTN}
     Log To Console    Botão "Esqueci minha senha" clicado com sucesso
