@@ -3,3 +3,7 @@ results/
 
 # Ignorar saída interativa gerada pelo Robot Framework
 interactive_console_output.xml
+
+# Ignorar logs do servidor Mock
+mock/server.log
+mock/server_err.log
