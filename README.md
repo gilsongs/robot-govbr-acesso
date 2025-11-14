@@ -37,7 +37,7 @@ robot-govbr-acesso/
 ### 🔐 Exemplo — Teste de Login da Conta
 
 	robot -d results \
-	  --variable URL_SSO:https://sso.gov.br/login \
+	  --variable URL_SSO:https://teste.gov.br/login \
 	  --variable BROWSER:chrome \
 	  --variable CPF:12345678901 \
 	  --variable SENHA:Brasil@123 \
@@ -46,7 +46,7 @@ robot-govbr-acesso/
 ### 🔄 Exemplo — Teste de Recuperação de Conta
 
 	robot -d results \
-	  --variable URL_SSO:https://sso.validacao.acesso.gov.br/login \
+	  --variable URL_SSO:https://teste.gov.br/login \
 	  --variable BROWSER:chrome \
 	  --variable CPF:12345678901 \
 	  --variable SENHA:Brasil@123 \
