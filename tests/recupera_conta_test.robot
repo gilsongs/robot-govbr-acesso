@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Teste de recuperação de senha no portal SSO do gov.br
+Documentation     Teste de recuperação da senha no portal SSO do gov.br
 Resource          ../resources/conta_page.resource
 Resource          ../resources/recupera_conta_page.resource
 Variables         ../variables/credentials.py
