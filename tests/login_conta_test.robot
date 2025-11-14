@@ -7,7 +7,7 @@ Library           SeleniumLibrary
 
 Suite Setup       Abrir página de login    ${URL_SSO}    ${BROWSER}
 Test Setup        Log To Console    URL=${URL_SSO} BROWSER=${BROWSER} CPF=${CPF} SENHA=${SENHA}
-Test Teardown     Capture Page Screenshot
+#Test Teardown     Capture Page Screenshot
 Suite Teardown    Capturar e fechar navegador
 
 *** Test Cases ***
@@ -18,6 +18,6 @@ Recuperar senha de conta GovBR
 
 *** Keywords ***
 Capturar e fechar navegador
-    Capture Page Screenshot
-    #Capture Page Screenshot    ${OUTPUT DIR}/screenshot-final.png
+    Obter a page do Login  
+    Capturar a imagem da tela
     Fechar navegador
