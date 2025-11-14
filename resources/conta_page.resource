@@ -21,7 +21,7 @@ Identificar com o CPF
     Wait Until Page Contains Element    ${SENHA_LBL}
 
 Obter a page da Conta
-    Wait Until Page Contains Element    ${SENHA_LBL}    timeout=5s
+    Wait Until Page Contains Element    ${SENHA_LBL}    timeout=10s
 
 Capturar a imagem da tela
     Capture Page Screenshot

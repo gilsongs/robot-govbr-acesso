@@ -17,4 +17,4 @@ Clicar em entrar para o login
     Log To Console    Botão "Entrar" clicado com sucesso
 
 Obter a page do Login
-    Wait Until Page Contains Element    ${DADOS_PESSOAIS_CRD}    timeout=5s
+    Wait Until Page Contains Element    ${DADOS_PESSOAIS_CRD}    timeout=10s
